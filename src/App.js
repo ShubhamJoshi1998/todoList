@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react';
 
@@ -46,7 +46,7 @@ function TodoListItems({value,indexNumber,todolist,setTodolist}){
    setStatus(!status)
   }
   let deleteRow=()=> {
-    let finalData = todolist.filter((v,i) => i != indexNumber)
+    let finalData = todolist.filter((v,i) => i !== indexNumber)
     setTodolist(finalData)
   }
   return(
